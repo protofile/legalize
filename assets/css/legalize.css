@@ -1917,7 +1917,7 @@ body.boxed-wrapper {
     margin-risidebar__post-imageght: 10px;
 }
 .desc-promo-detil{
-    background-color: #0F0D1D;
+    background-color: #EFF6F5;
 }
 .desc-promo-detil p{
     font-size: 12px;
@@ -2157,7 +2157,20 @@ body.boxed-wrapper {
 .price-sec .container .thm-btn{
     padding: 10px 20px;
 }
-
+.desc-promo-detil .dropdown button{
+    color: #236651;
+}
+.news-details__content h5{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.news-details__content h4{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #726F84;
+}
 
 
 @media(min-width: 992px) {
@@ -3447,7 +3460,6 @@ body.boxed-wrapper {
     display: block;
     margin: 0;
     padding: 0;
-    padding: 120px 0 204px;
 }
 
 .counter-one__single {
@@ -3787,7 +3799,6 @@ body.boxed-wrapper {
     width: 100%;
     transform: scale(1);
     transition: all 500ms ease;
-    mix-blend-mode: luminosity;
 }
 
 .news-one__single:hover .news-one__img>img {
@@ -3799,7 +3810,6 @@ body.boxed-wrapper {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(var(--thm-black-rgb), 0.9);
     position: absolute;
     display: flex;
     justify-content: center;
@@ -3822,7 +3832,6 @@ body.boxed-wrapper {
     content: '';
     width: 20px;
     height: 2px;
-    background-color: var(--thm-base);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -3835,7 +3844,6 @@ body.boxed-wrapper {
     transition: all 500ms ease;
     width: 2px;
     height: 20px;
-    background-color: var(--thm-base);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -6870,12 +6878,10 @@ body.boxed-wrapper {
 .blog-single__content-img {
     position: relative;
     display: block;
-    background-color: var(--thm-black);
 }
 
 .blog-single__content-img>img {
     width: 100%;
-    mix-blend-mode: luminosity;
 }
 
 .blog-single__date-box {
@@ -7190,14 +7196,12 @@ body.boxed-wrapper {
 }
 
 .sidebar__post-image {
-    background-color: var(--thm-black);
     margin-right: 20px;
 }
 
 .sidebar__post-image>img {
     width: 70px;
     border-radius: 0px;
-    mix-blend-mode: luminosity;
 }
 
 .sidebar__post-content h3 {
@@ -7995,9 +7999,6 @@ body.boxed-wrapper {
 /*Counter Page*/
 
 
-.counter-page .counters-one__box {
-    padding-bottom: 107px;
-}
 
 /*Team Page*/
 
