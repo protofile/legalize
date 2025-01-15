@@ -1537,7 +1537,6 @@ body.boxed-wrapper {
     transform: scale(1);
     transition: transform 7000ms ease;
     z-index: 1;
-    background-color: var(--thm-black);
     background-blend-mode: luminosity;
     opacity: 0.7;
     background-position: center center;
@@ -2075,7 +2074,7 @@ body.boxed-wrapper {
     background-color: #ffffff;
 }
 .testimonials-one .testimonials-one__single{
-    background-color: #ffffff;
+    background-color: #EFF6F5;
 }
 .sub-service{
     background-color: #ffffff;
@@ -2933,7 +2932,6 @@ body.boxed-wrapper {
     position: relative;
     display: block;
     overflow: hidden;
-    background-color: var(--thm-black);
 }
 
 .cases-one__img>img {
@@ -3431,7 +3429,6 @@ body.boxed-wrapper {
 .counters-one {
     position: relative;
     display: block;
-    background-color: var(--thm-black);
 }
 
 .counters-one-bg {
@@ -3784,7 +3781,6 @@ body.boxed-wrapper {
     position: relative;
     display: block;
     overflow: hidden;
-    background-color: var(--thm-black);
 }
 
 .news-one__img>img {
@@ -7806,7 +7802,7 @@ body.boxed-wrapper {
     position: relative;
     display: block;
     border-top: 1px solid #e6e9ef;
-    padding-top: 120px;
+    padding-top: 70px;
 }
 
 .locations .row {
@@ -7844,7 +7840,7 @@ body.boxed-wrapper {
 .locations__text {
     font-size: 16px;
     margin: 0;
-    line-height: 30px;
+    line-height: 24px;
     transition: all 500ms ease;
 }
 
