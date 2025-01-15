@@ -1,21 +1,4 @@
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Utility
-# Cards
-# Common
-# Form
-# Navigations
-# Animations
-# Mobile Nav
-# Search Popup
-# Page Header
-# Google Map
-# Client Carousel
---------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------
 # Common
 --------------------------------------------------------------*/
 :root {
@@ -2041,6 +2024,33 @@ body.boxed-wrapper {
 .mitra-sec .mitra-client .client-image{
     width: 175px;
 }
+.about .about__right p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #726F84;
+}
+.about .desc-about .detail-about h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43.88px;
+    color: #000000;
+}
+.about .desc-about .detail-about p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #726F84;
+}
+.counter-about{
+    background-color: #236651;
+}
+.testimonials-one{
+    background-color: #ffffff;
+}
+.testimonials-one .testimonials-one__single{
+    background-color: #ffffff;
+}
 
 
 
@@ -3180,8 +3190,7 @@ body.boxed-wrapper {
 .testimonials-one {
     position: relative;
     display: block;
-    background-color: var(--thm-light);
-    ;
+    background-color: #ffffff;
     padding: 120px 0 120px;
 }
 
@@ -3253,6 +3262,12 @@ body.boxed-wrapper {
 .testimonials-one__text {
     margin: 0;
 }
+.testimonials-one__text p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #726F84;
+}
 
 .testimonials-one__client-info {
     position: relative;
@@ -3296,7 +3311,7 @@ body.boxed-wrapper {
     position: absolute;
     bottom: 60px;
     right: 50px;
-    background-image: url(../images/testimonial/testimonials-1-iocn.png);
+    background-image: url(../images/legalize/icons/double-quotes.png);
     background-repeat: no-repeat;
     width: 99px;
     height: 55px;
@@ -3916,7 +3931,7 @@ body.boxed-wrapper {
 .site-footer {
     position: relative;
     display: block;
-    background-color: var(--thm-black);
+    background-color: var(--thm-primary);
 }
 
 .site-footer-shape {
@@ -4042,11 +4057,6 @@ body.boxed-wrapper {
 }
 
 
-
-
-
-
-
 .footer-widget__title-news {
     margin-bottom: 42px;
 }
@@ -4054,7 +4064,7 @@ body.boxed-wrapper {
 .footer-widget__newsletter-form {
     position: relative;
     display: block;
-    background-color: #06050c;
+    background-color: transparent;
     padding: 30px 40px 40px;
 }
 
@@ -6170,14 +6180,11 @@ body.boxed-wrapper {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-color: var(--thm-black);
 }
 
 .page-header__bg {
-    background-image: url(../images/backgrounds/page-header-bg.jpg);
+    background-image: url(../images/legalize/about-header.png);
     background-size: cover;
-    background-color: var(--thm-black);
-    background-blend-mode: luminosity;
     opacity: 0.5;
     position: absolute;
     top: 0;
@@ -6191,6 +6198,15 @@ body.boxed-wrapper {
     display: block;
     text-align: center;
     z-index: 3;
+}
+.page-header .page-header__inner ul li{
+    color: #0F0D1D;
+}
+.page-header .page-header__inner ul li a{
+    color: #0F0D1D;
+}
+.page-header .page-header__inner h2{
+    color: var(--thm-primary);
 }
 
 .thm-breadcrumb {
@@ -7780,11 +7796,6 @@ body.boxed-wrapper {
     background-color: var(--thm-black);
 }
 
-.about-img>img {
-    width: 100%;
-    mix-blend-mode: luminosity;
-}
-
 .about__right {
     position: relative;
     display: block;
@@ -7829,6 +7840,7 @@ body.boxed-wrapper {
     font-weight: 400;
     margin: 0;
     padding-bottom: 49px;
+    padding-top: 5px;
 }
 
 .about__phone-contact {
@@ -7868,6 +7880,10 @@ body.boxed-wrapper {
 
 .about__phone-contact-text a {
     color: var(--thm-black);
+}
+
+.page-wrapper .main-menu__list li a{
+    color: #0F0D1D;
 }
 
 /*Counter Page*/
