@@ -9694,9 +9694,11 @@ body.boxed-wrapper {
     left: 0;
     background: #EFF6F5;
     border-bottom: 2px solid var(--thm-primary);
+    pointer-events: none;
 }
 li.mega-menu:hover a + .mega-menu-box{
     opacity: 1;
+    pointer-events: auto;
 }
 .mega-menu-box a span.text{
     color: #333;
