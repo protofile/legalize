@@ -1,10 +1,6 @@
 (function ($) {
   "use strict";
 
-
-
-
-
   //Pricing Tabs
   if ($('.pricing-tabs').length) {
     $('.pricing-tabs .tab-btns .tab-btn').on('click', function (e) {
@@ -775,11 +771,6 @@
     OnePageMenuScroll();
   });
 
-
-
-
-
-
   if ($(".before-after-twentytwenty").length) {
     $(".before-after-twentytwenty").each(function () {
       var Self = $(this);
@@ -799,6 +790,10 @@
     });
   };
 
+  $(".card-promo-horizon a.toggle").click(function(p){
+    p.preventDefault();
+    $(this).parent().parent().toggleClass("active");
+  });
 
 
 })(jQuery);
