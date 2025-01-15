@@ -1535,7 +1535,6 @@ body.boxed-wrapper {
     transform: scale(1);
     transition: transform 7000ms ease;
     z-index: 1;
-    background-color: var(--thm-black);
     background-blend-mode: luminosity;
     opacity: 0.7;
     background-position: center center;
@@ -2935,7 +2934,6 @@ body.boxed-wrapper {
     position: relative;
     display: block;
     overflow: hidden;
-    background-color: var(--thm-black);
 }
 
 .cases-one__img>img {
@@ -3786,7 +3784,6 @@ body.boxed-wrapper {
     position: relative;
     display: block;
     overflow: hidden;
-    background-color: var(--thm-black);
 }
 
 .news-one__img>img {
