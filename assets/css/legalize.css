@@ -1913,6 +1913,31 @@ body.boxed-wrapper {
     background-color: transparent;
     border: none;
     padding: 0;
+    margin-risidebar__post-imageght: 10px;
+}
+.desc-promo-detil{
+    background-color: #0F0D1D;
+}
+.desc-promo-detil p{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.63px;
+    color: #726F84;
+    margin-top:12px;
+    margin-left: 10px;
+}
+.desc-promo-detil dropdown{
+    padding: 0;
+    margin: 0;
+}
+.desc-promo-detil button{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.63px;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    padding: 0;
     margin-right: 10px;
 }
 .services-sec{
@@ -2050,6 +2075,90 @@ body.boxed-wrapper {
 }
 .testimonials-one .testimonials-one__single{
     background-color: #ffffff;
+}
+.sub-service{
+    background-color: #ffffff;
+}
+.sub-service .services-sec{
+    background-color: #ffffff;
+}
+.about-detail-service .about{
+    padding-bottom: 20px;
+}
+.price-sec{
+    padding: 50px;
+    background-color: #EFF6F5;
+}
+.price-sec h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60.95px;
+    color: #0F0D1D;
+    text-align: center;
+}
+.price-sec p{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.94px;
+    color: #726F84;
+    text-align: center;
+    margin-left: 20px;
+}
+.price-sec .card-price{
+    padding: 30px;
+    background-color: #ffffff;
+    margin: 0 10px;
+}
+.price-sec .card-price h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+}
+.price-sec .card-price h2{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 29.26px;
+}
+.price-sec .card-price p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 29.26px;
+    color: #726F84;
+    text-align: justify;
+}
+.price-sec .card-promo-horizon{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+.price-sec .card-promo-horizon h3{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 29px;
+}
+.price-sec .card-promo-horizon h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+.price-sec .card-promo-horizon p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: left;
+    margin: 0;
+}
+.price-sec .card-promo-horizon a{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #236651;
+}
+.price-sec .container .thm-btn{
+    padding: 10px 20px;
 }
 
 
@@ -3964,9 +4073,6 @@ body.boxed-wrapper {
 }
 
 
-
-
-
 .footer-widget__text {
     font-size: 16px;
     color: #8f8da0;
@@ -4638,10 +4744,10 @@ body.boxed-wrapper {
 .listen {
     position: relative;
     display: block;
-    background-color: var(--thm-light);
-    ;
-    padding: 240px 0 120px;
-    margin-top: -120px;
+    background-color: #ffffff;
+    padding: 50px 0 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     z-index: 1;
 }
 
@@ -4656,7 +4762,7 @@ body.boxed-wrapper {
     font-weight: 900;
     line-height: 60px;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
     margin-top: -12px;
 }
 
@@ -4720,12 +4826,19 @@ body.boxed-wrapper {
 .listen__right {
     position: relative;
     display: block;
+    background-color: #EFF6F5;
+    padding: 50px;
+}
+.listen__right h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34px;
 }
 
 
 
 .listen__right-faq .faq-one-accrodion .accrodion-title {
-    background-color: var(--thm-base);
+    background-color: #ffffff ;
 }
 
 /*--------------------------------------------------------------
