@@ -116,6 +116,9 @@ ul {
     opacity: 1;
 }
 
+section{
+    padding: 120px 0;
+}
 
 .page-wrapper {
     position: relative;
@@ -222,7 +225,6 @@ body.boxed-wrapper {
     color: var(--thm-black);
     font-size: 50px;
     line-height: 60px;
-    text-transform: uppercase;
     margin-bottom: 8px;
     letter-spacing: var(--thm-letter-space-small);
 }
@@ -1941,7 +1943,6 @@ body.boxed-wrapper {
     margin-right: 10px;
 }
 .services-sec{
-    padding: 50px;
     background-color: #EFF6F5;
 }
 .services-sec h1 {
@@ -2107,7 +2108,6 @@ body.boxed-wrapper {
 .price-sec .card-price{
     padding: 30px;
     background-color: #ffffff;
-    margin: 0 10px;
 }
 .price-sec .card-price h3{
     font-size: 24px;
@@ -2127,8 +2127,6 @@ body.boxed-wrapper {
     text-align: justify;
 }
 .price-sec .card-promo-horizon{
-    margin-left: 50px;
-    margin-right: 50px;
     padding: 30px;
     background-color: #ffffff;
     padding: 20px;
@@ -7895,7 +7893,6 @@ body.boxed-wrapper {
 .about {
     position: relative;
     display: block;
-    padding: 120px 0 120px;
 }
 
 .about__img-box {
@@ -9652,4 +9649,12 @@ body.boxed-wrapper {
 .main-header-three .main-menu .main-menu__list>li+li,
 .main-menu-three.stricky-header .main-menu__list>li+li {
     margin-left: 50px;
+}
+
+.stricky-header.stricky-fixed .main-menu__list a{
+    color: #fff;
+}
+.stricky-header.stricky-fixed .main-menu-wrapper__logo{
+    padding-top: 0;
+    padding-bottom: 0;
 }
