@@ -172,7 +172,7 @@
   // Main Slider Carousel
   if ($(".main-slider__carousel").length) {
     $(".main-slider__carousel").owlCarousel({
-      loop: true,
+      loop: false,
       margin: 30,
       nav: true,
       smartSpeed: 500,
@@ -823,5 +823,9 @@
     $(this).parent().parent().toggleClass("active");
   });
 
+  $(".mega-menu a").click(function(mm){
+    mm.preventDefault();
+    $($(this).parent()).toggleClass("clicked");
+  });
 
 })(jQuery);
