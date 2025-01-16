@@ -169,6 +169,41 @@
     });
   }
 
+  // Main Slider Carousel
+  if ($(".main-slider__carousel").length) {
+    $(".main-slider__carousel").owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: true,
+      smartSpeed: 500,
+      autoHeight: false,
+      autoplay: true,
+      dots: false,
+      autoplayTimeout: 10000,
+      navText: [
+        '<span class="icon-right-arrow left"></span>',
+        '<span class="icon-right-arrow"></span>',
+      ],
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        800: {
+          items: 2,
+        },
+        1024: {
+          items: 2,
+        },
+        1200: {
+          items: 3,
+        },
+      },
+    });
+  }
+
 
 
 
@@ -735,13 +770,6 @@
         pagerCustom: '.testimonial-two__slider .slider-pager .testimonial-two__thumb-box'
       });
     };
-
-
-
-
-
-
-
 
 
 

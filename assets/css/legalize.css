@@ -1642,8 +1642,8 @@ body.boxed-wrapper {
 }
 
 .main-slider .container {
-    padding-top: 296px;
-    padding-bottom: 178px;
+    padding-top: 400px;
+    padding-bottom: 120px;
 }
 
 .main-slider__content {
@@ -1710,6 +1710,7 @@ body.boxed-wrapper {
     line-height: 60.95px;
     text-transform: capitalize;
     margin-bottom: 10px;
+    padding-top: 0;
 }
 
 .main-slider .swiper-slide p {
@@ -1732,7 +1733,6 @@ body.boxed-wrapper {
 
 .main-slider .swiper-slide .card-highlight {
     padding: 10px;
-    margin-top: 120px;
 }
 
 .main-slider .swiper-slide .card-highlight h5{
@@ -1862,8 +1862,11 @@ body.boxed-wrapper {
 }
 /* Legalize */
 .map-service{
-    padding: 50px ;
+    padding: 120px 0;
     background-color: #EFF6F5;
+}
+.map-service img{
+    width: 100%;
 }
 .map-service h1{
     font-size: 50px;
@@ -1875,9 +1878,6 @@ body.boxed-wrapper {
     font-size: 50px;
     font-weight: 700;
     line-height: 60.95px;
-}
-.promo-sec {
-    padding: 50px;
 }
 .promo-sec p{
     font-size: 18px;
@@ -1924,8 +1924,8 @@ body.boxed-wrapper {
     font-weight: 700;
     line-height: 14.63px;
     color: #726F84;
-    margin-top:12px;
     margin-left: 10px;
+    margin-bottom: 0;
 }
 .desc-promo-detil dropdown{
     padding: 0;
@@ -1966,12 +1966,9 @@ body.boxed-wrapper {
 
 .check-sec {
     background: linear-gradient(to bottom, #ffffff 50%, #236651 50%);
-    padding: 50px;
 }
 .check-sec .card-check{
-    margin-right: 20px;
-    margin-left: 19px;
-    width:350px;
+    width:100%;
 }
 .check-sec .card-check img{
     padding-right: 20px;
@@ -1983,7 +1980,6 @@ body.boxed-wrapper {
     color: #000000;
 }
 .contact-sec{
-    padding: 70px;
     background-color: #EFF6F5;
 }
 .contact-sec h3{
@@ -1993,7 +1989,6 @@ body.boxed-wrapper {
     color: #0F0D1D;
 }
 .news-highlight{
-    padding: 50px;
     background-color: #ffffff;
 }
 .news-highlight h1{
@@ -2018,7 +2013,6 @@ body.boxed-wrapper {
 }
 .news-highlight .news-list{
     background-color: #EFF6F5;
-    padding: 50px;
 }
 .news-highlight .news-list span{
     font-size: 12px;
@@ -2036,8 +2030,6 @@ body.boxed-wrapper {
     margin-bottom: 30px;
 }
 .mitra-sec{
-    padding: 50px;
-    padding-top: 100px;
     background-color: #F2F4F8;
 }
 .mitra-sec h3{
@@ -2086,7 +2078,6 @@ body.boxed-wrapper {
     padding-bottom: 20px;
 }
 .price-sec{
-    padding: 50px;
     background-color: #EFF6F5;
 }
 .price-sec h1{
@@ -7178,8 +7169,6 @@ body.boxed-wrapper {
 .sidebar__post-list li {
     display: flex;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-top: 14px;
     padding-bottom: 15px;
     background-color: transparent;
@@ -7904,7 +7893,9 @@ body.boxed-wrapper {
     display: block;
     background-color: var(--thm-black);
 }
-
+.about-img img{
+    width: 100%;
+}
 .about__right {
     position: relative;
     display: block;
@@ -7948,8 +7939,7 @@ body.boxed-wrapper {
 .about__right-text {
     font-weight: 400;
     margin: 0;
-    padding-bottom: 49px;
-    padding-top: 5px;
+    margin-bottom: 20px;
 }
 
 .about__phone-contact {
@@ -9731,4 +9721,30 @@ li.mega-menu:hover a + .mega-menu-box{
     width: 65px;
     height: 65px;
     object-fit: contain;
+}
+
+.contact-map{
+    width: 100%;
+    height: 550px;
+}
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+}
+.locations__single_img img{
+    width: 100%;
+}
+
+.listen__left img{
+    width: 100%;
+}
+
+.news-details__left img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 480px){
+    .card-promo{
+        margin-bottom: 20px;
+    }
 }
