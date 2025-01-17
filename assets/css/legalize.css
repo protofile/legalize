@@ -9890,6 +9890,105 @@ li.mega-menu:hover a + .mega-menu-box{
     justify-content: space-between;
     padding: 10px;
 }
+.map-service__dotted-map{
+    width: 100%;
+    position: relative;
+}
+.map-service__dotted-map img{
+    width: 100%;
+}
+.map-dot{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%,-100%);
+    -webkit-transform: translate(-50%,-100%);
+    -moz-transform: translate(-50%,-100%);
+    -ms-transform: translate(-50%,-100%);
+    -o-transform: translate(-50%,-100%);
+}
+.map-bullet{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: var(--thm-gray);
+    margin: auto;
+    margin-top: 10px;
+}
+.map-info{
+    background: var(--thm-primary);
+    width: 200px;
+    padding: 20px;
+    pointer-events: none;
+    opacity: 0;
+    margin-left: 8px;
+    transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -ms-transition: all ease-out 0.3s;
+    -o-transition: all ease-out 0.3s;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    position: relative;
+}
+.map-dot:hover{
+    z-index: 99;
+}
+.map-dot:hover .map-info{
+    opacity: 1;
+}
+.map-info p{
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 150%;
+    color: rgba(255,255,255,0.7)
+}
+.map-info h5{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.map-dot.aceh{top: 0;left: 0;}
+.map-dot.sumatera-utara{top: 0;left: 0;}
+.map-dot.riau{top: 0;left: 0;}
+.map-dot.sumatera-barat{top: 0;left: 0;}
+.map-dot.jambi{top: 0;left: 0;}
+.map-dot.kepulauan-riau{top: 0;left: 0;}
+.map-dot.bengkulu{top: 0;left: 0;}
+.map-dot.bangka-belitung{top: 0;left: 0;}
+.map-dot.sumatera-selatan{top: 0;left: 0;}
+.map-dot.lampung{top: 0;left: 0;}
+.map-dot.banten{top: 0;left: 0;}
+.map-dot.jakarta{top: 0;left: 0;}
+.map-dot.jawa-barat{top: 0;left: 0;}
+.map-dot.jawa-tengah{top: 0;left: 0;}
+.map-dot.yogyakarta{top: 0;left: 0;}
+.map-dot.jawa-timur{top: 0;left: 0;}
+.map-dot.kalimantan-barat{top: 0;left: 0;}
+.map-dot.kalimantan-tengah{top: 0;left: 0;}
+.map-dot.kalimantan-utara{top: 0;left: 0;}
+.map-dot.kalimantan-timur{top: 0;left: 0;}
+.map-dot.kalimantan-selatan{top: 0;left: 0;}
+.map-dot.bali{top: 0;left: 0;}
+.map-dot.nusa-tenggara-barat{top: 0;left: 0;}
+.map-dot.nusa-tenggara-timur{top: 0;left: 0;}
+.map-dot.sulawesi-utara{top: -9%;left: 65%;}
+.map-dot.gorontalo{top: -2%;left: 60%;}
+.map-dot.sulawesi-tengah{top: 8%;left: 58%;}
+.map-dot.sulawesi-barat{top: 14%;left: 52%;}
+.map-dot.sulawesi-selatan{top: 30%;left: 54%;}
+.map-dot.sulawesi-tenggara{top: 30%;left: 60%;}
+.map-dot.maluku-utara{top: -5%;left: 71%;}
+.map-dot.maluku{top: 21%;left: 74%;}
+.map-dot.papua-barat{top: 15%;left: 84%;}
+.map-dot.papua{top: 27%;left: 95%;}
 
 @media only screen and (max-width: 480px){
     section{
