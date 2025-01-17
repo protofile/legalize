@@ -771,6 +771,16 @@
       });
     };
 
+    if ($('.client-slider').length) {
+      $('.client-slider').owlCarousel({
+        nav: true,
+        dots: false,
+        items: 5
+      });
+    };
+
+    
+
 
 
   });

@@ -663,8 +663,8 @@
     }
 
     .news-one__title {
-        font-size: 23px;
-        line-height: 33px;
+        font-size: 18px;
+        line-height: 150%;
     }
 
     .news-one__img>a {
@@ -712,10 +712,6 @@
 
     .site-footer__social {
         margin-top: 20px;
-    }
-
-    .site-footer-shape {
-        display: none;
     }
 
     .faq-one-accrodion .accrodion-title h4::before {
@@ -1079,8 +1075,8 @@
     }
 
     .blog-single__title {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: 150%;
     }
 
     .blog-single__video-btn {
@@ -1102,8 +1098,8 @@
     }
 
     .news-details__title {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: 150%;
     }
 
     .news-details__bottom {
@@ -1144,8 +1140,8 @@
     }
 
     .section-title__title {
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 36px;
+        line-height: 150%;
     }
 
     .page-header__inner h2 {
