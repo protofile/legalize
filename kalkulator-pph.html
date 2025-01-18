@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Promo || legalize </title>
+    <title>Kalkulator Pajak Properti || legalize </title>
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
     <meta name="description" content="legalize HTML Template For Business Consulting" />
 
@@ -225,140 +225,261 @@
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
 
-        <!--Page Header Start-->
-        <section class="page-header">
-            <div class="page-header__bg">
-                <img src="assets/images/legalize/promo-header.png" alt="">
-            </div>
+        <section class="mt-120">
             <div class="container">
-                <div class="page-header__inner">
-                    <ul class="thm-breadcrumb list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><span>/</span></li>
-                        <li>Promo</li>
-                    </ul>
-                    <h2>Promo</h2>
+                <div class="section-title text-center">
+                    <h2 class="section-title__title">Kalkulator Pajak Penghasilan</h2>
                 </div>
-            </div>
-        </section>
-        <!--Page Header End-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="tab-nav mb-0">
+                            <a href="#pph21" class="active">PPH 21</a>
+                            <a href="#pph23">PPH 23</a>
+                            <a href="#pph4">PPH 4 Ayat (2)</a>
+                            <a href="#ppn">PPN</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="pph21" class="tab-ct show bg-greenlight">
+                            <form action="" class="simple-form">
+                                <h4 class="mb-3 text-center">Data Personal</h4>
+                                <div class="inp-group row mb-5 mx-auto justify-content-center">
+                                    <div class="col-md-4">
+                                        <div class="inp-group">
+                                            <label for="">Status Pegawai</label>
+                                            <select name="" id="">
+                                                <option value="">Tidak Kawin</option>
+                                                <option value="">Kawin</option>
+                                                <option value="">Hidup Terpisah</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="inp-group">
+                                            <label for="">Tanggungan</label>
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <h4 class="mb-3 text-center">Tunjangan Pajak</h4>
+                                <div class="inp-group row mx-auto justify-content-center">
+                                    <div class="col-md-8">
+                                        <div class="checkbox-group">
+                                            <label for="type-1"><input type="radio" name="type" id="type-1"> Gross (PPh 21 ditanggung karyawan)</label>
+                                            <label for="type-2"><input type="radio" name="type" id="type-2"> Gross Up (PPh 21 ditanggung perusahaan)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <h4 class="mb-3 text-center">Penghasilan</h4>
+                                <div class="inp-group row mx-auto justify-content-center">
+                                    <div class="col-md-8 mb-2">
+                                        <label for="">Gaji/Pensiunan atau THT/JHT</label>
+                                        <input type="text" class="text-right">
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <label for="">Tunjangan PPh</label>
+                                        <input type="text" class="text-right">
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <label for="">Tunjangan Lainnya, Uang Lembur, dan sebagainya</label>
+                                        <input type="text" class="text-right">
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <label for="">Honorarium dan Imbalan Lain Sejenisnya</label>
+                                        <input type="text" class="text-right">
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <label for="">Premi Asuransi yang dibayar Pemberi Kerja</label>
+                                        <input type="text" class="text-right">
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <label for="">Natura dan Kenikmatan Lainnya</label>
+                                        <input type="text" class="text-right">
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <label for="">Tantiem, Bonus, Gratifikasi, Jasa Produksi dan THR</label>
+                                        <input type="text" class="text-right">
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <label for="">Penghasilan Bruto</label>
+                                        <input type="text" class="text-right no-edit">
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <h4 class="mb-3 text-center">Hasil Penghitungan PPh Pasal 21</h4>
+                                <div class="inp-group row mx-auto justify-content-center">
+                                    <div class="col-md-8 mb-2">
+                                        <label for="">Tarif Efektif Rata-rata (TER) Bulanan</label>
+                                        <input type="text" class="text-right no-edit">
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <label for="">Kategori TER</label>
+                                        <input type="text" class="text-right no-edit">
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <label for="">PPh Pasal 21 Terutang bulan ini</label>
+                                        <input type="text" class="text-right no-edit">
+                                    </div>
+                                </div>
+                                <div class="inp-group">
+                                    <button class="thm-btn">HITUNG</button>
+                                </div>
+                            </form>
+                        </div>
 
-        <!--Team Page Start-->
-        <section class="team-one team-page">
-            <div class="container">
-                <div class="row d-flex">
-                    <div class="col-md-4 col-sm-12 mb-4">
-                        <div class="card-promo">
-                            <img src="assets/images/legalize/promo-4.png" alt="" width="100%">
+                        <div id="pph23" class="tab-ct bg-greenlight">
+                            <form action="" class="simple-form">
+                                <h4 class="mb-3 text-center">PPh23</h4>
+                                <div class="inp-group row mb-5 mx-auto justify-content-center">
+                                    <div class="col-md-8 mb-2">
+                                        <div class="inp-group">
+                                            <label for="">Kode Objek Pajak</label>
+                                            <select name="" id="">
+                                                <option value="">Opsi 1</option>
+                                                <option value="">Opsi 2</option>
+                                                <option value="">Opsi 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <div class="inp-group">
+                                            <label for="">Penghasilan Bruto</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <div class="inp-group">
+                                            <label for="">Tarif</label>
+                                            <input type="text" class="no-edit">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <div class="inp-group">
+                                            <label for="">PPh 23</label>
+                                            <input type="text" class="no-edit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="promo-title">
-                            <h3><a href="#">Lorem Ipsum Dolor Sit Amet</a></h3>
+                        <div id="pph4" class="tab-ct bg-greenlight">
+                            <form action="" class="simple-form">
+                                <h4 class="mb-3 text-center">PPh 4(2)</h4>
+                                <div class="inp-group row mb-5 mx-auto justify-content-center">
+                                    <div class="col-md-8 mb-2">
+                                        <div class="inp-group">
+                                            <label for="">Kode Objek Pajak</label>
+                                            <select name="" id="">
+                                                <option value="">Opsi 1</option>
+                                                <option value="">Opsi 2</option>
+                                                <option value="">Opsi 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <div class="inp-group">
+                                            <label for="">Penghasilan Bruto</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <div class="inp-group">
+                                            <label for="">Tarif</label>
+                                            <input type="text" class="no-edit">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <div class="inp-group">
+                                            <label for="">PPh 4(2)</label>
+                                            <input type="text" class="no-edit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="desc-promo-detil">
-                            <p>Exp: 12 Feb 2025</p>
-                            <a href="#">Terms & Conditions <i class="fa fa-caret-right"></i></a>
+                        <div id="ppn" class="tab-ct bg-greenlight">
+                            <form action="" class="simple-form">
+                                <h4 class="mb-3 text-center">PPN</h4>
+                                <div class="inp-group row mb-5 mx-auto justify-content-center">
+                                    <div class="col-md-8 mb-2">
+                                        <div class="inp-group">
+                                            <label for="">DPP</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <div class="inp-group">
+                                            <label for="">Tarif</label>
+                                            <input type="text" class="no-edit">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <div class="inp-group">
+                                            <label for="">PPN</label>
+                                            <input type="text" class="no-edit">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 mb-2">
+                                        <div class="inp-group">
+                                            <label for="">Harga setelah PPN</label>
+                                            <input type="text" class="no-edit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 mb-4">
-                        <div class="card-promo">
-                            <img src="assets/images/legalize/promo-5.png" alt="" width="100%">
-                        </div>
-                        <div class="promo-title">
-                            <h3><a href="#">Lorem Ipsum Dolor Sit Amet</a></h3>
-                        </div>
-                        <div class="desc-promo-detil">
-                            <p>Exp: 12 Feb 2025</p>
-                            <a href="#">Terms & Conditions <i class="fa fa-caret-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 mb-4">
-                        <div class="card-promo">
-                            <img src="assets/images/legalize/promo-6.png" alt="" width="100%">
-                        </div>
-                        <div class="promo-title">
-                            <h3><a href="#">Lorem Ipsum Dolor Sit Amet</a></h3>
-                        </div>
-                        <div class="desc-promo-detil">
-                            <p>Exp: 12 Feb 2025</p>
-                            <a href="#">Terms & Conditions <i class="fa fa-caret-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 mb-4">
-                        <div class="card-promo">
-                            <img src="assets/images/legalize/promo-4.png" alt="" width="100%">
-                        </div>
-                        <div class="promo-title">
-                            <h3><a href="#">Lorem Ipsum Dolor Sit Amet</a></h3>
-                        </div>
-                        <div class="desc-promo-detil">
-                            <p>Exp: 12 Feb 2025</p>
-                            <a href="#">Terms & Conditions <i class="fa fa-caret-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 mb-4">
-                        <div class="card-promo">
-                            <img src="assets/images/legalize/promo-5.png" alt="" width="100%">
-                        </div>
-                        <div class="promo-title">
-                            <h3><a href="#">Lorem Ipsum Dolor Sit Amet</a></h3>
-                        </div>
-                        <div class="desc-promo-detil">
-                            <p>Exp: 12 Feb 2025</p>
-                            <a href="#">Terms & Conditions <i class="fa fa-caret-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 mb-4">
-                        <div class="card-promo">
-                            <img src="assets/images/legalize/promo-6.png" alt="" width="100%">
-                        </div>
-                        <div class="promo-title">
-                            <h3><a href="#">Lorem Ipsum Dolor Sit Amet</a></h3>
-                        </div>
-                        <div class="desc-promo-detil">
-                            <p>Exp: 12 Feb 2025</p>
-                            <a href="#">Terms & Conditions <i class="fa fa-caret-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 mb-4">
-                        <div class="card-promo">
-                            <img src="assets/images/legalize/promo-4.png" alt="" width="100%">
-                        </div>
-                        <div class="promo-title">
-                            <h3><a href="#">Lorem Ipsum Dolor Sit Amet</a></h3>
-                        </div>
-                        <div class="desc-promo-detil">
-                            <p>Exp: 12 Feb 2025</p>
-                            <a href="#">Terms & Conditions <i class="fa fa-caret-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 mb-4">
-                        <div class="card-promo">
-                            <img src="assets/images/legalize/promo-5.png" alt="" width="100%">
-                        </div>
-                        <div class="promo-title">
-                            <h3><a href="#">Lorem Ipsum Dolor Sit Amet</a></h3>
-                        </div>
-                        <div class="desc-promo-detil">
-                            <p>Exp: 12 Feb 2025</p>
-                            <a href="#">Terms & Conditions <i class="fa fa-caret-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 mb-4">
-                        <div class="card-promo">
-                            <img src="assets/images/legalize/promo-6.png" alt="" width="100%">
-                        </div>
-                        <div class="promo-title">
-                            <h3><a href="#">Lorem Ipsum Dolor Sit Amet</a></h3>
-                        </div>
-                        <div class="desc-promo-detil">
-                            <p>Exp: 12 Feb 2025</p>
-                            <a href="#">Terms & Conditions <i class="fa fa-caret-right"></i></a>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="news-details__content row mt-120">
+                            <div class="col-md-12">
+                                <h3 class="news-details__title mb-5">Catatan</h3>
+                                <h4 class="news-details__title">Untuk Jual-beli</h4>
+                                <ul class="mb-3">
+                                    <li class="news-details__text-one">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan sagittis sem, eu lacinia arcu fringilla a. Donec laoreet lectus et diam vestibulum blandit. Suspendisse lacinia malesuada velit, nec congue massa
+                                    </li>
+                                    <li class="news-details__text-one">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan sagittis sem, eu lacinia arcu fringilla a. Donec laoreet lectus et diam vestibulum blandit. Suspendisse lacinia malesuada velit, nec congue massa
+                                    </li>
+                                    <li class="news-details__text-one">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan sagittis sem, eu lacinia arcu fringilla a. Donec laoreet lectus et diam vestibulum blandit. Suspendisse lacinia malesuada velit, nec congue massa
+                                    </li>
+                                </ul>
+                                <h4 class="news-details__title">Untuk Hibah</h4>
+                                <ul class="mb-5">
+                                    <li class="news-details__text-one">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan sagittis sem, eu lacinia arcu fringilla a. Donec laoreet lectus et diam vestibulum blandit. Suspendisse lacinia malesuada velit, nec congue massa
+                                    </li>
+                                    <li class="news-details__text-one">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan sagittis sem, eu lacinia arcu fringilla a. Donec laoreet lectus et diam vestibulum blandit. Suspendisse lacinia malesuada velit, nec congue massa
+                                    </li>
+                                    <li class="news-details__text-one">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan sagittis sem, eu lacinia arcu fringilla a. Donec laoreet lectus et diam vestibulum blandit. Suspendisse lacinia malesuada velit, nec congue massa
+                                    </li>
+                                </ul>
+                                <h4 class="news-details__title">Disclaimer</h4>
+                                <p class="news-details__text-one">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan sagittis sem, eu lacinia arcu fringilla a. Donec laoreet lectus et diam vestibulum blandit. Suspendisse lacinia malesuada velit, nec congue massa
+                                </p>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--Team Page End-->
 
         <!--Site Footer One Start-->
         <footer class="site-footer">
