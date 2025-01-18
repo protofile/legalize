@@ -9939,7 +9939,8 @@ li.mega-menu:hover a + .mega-menu-box{
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
-    position: relative;
+    position: absolute;
+    bottom: 100%;
 }
 .map-dot:hover{
     z-index: 99;
@@ -9958,40 +9959,40 @@ li.mega-menu:hover a + .mega-menu-box{
     margin-bottom: 20px;
     font-size: 16px;
 }
-.map-dot.aceh{top: -21%;left: 3%;}
-.map-dot.sumatera-utara{top: -10%;left: 8%;}
-.map-dot.riau{top: -1%;left: 13%;}
-.map-dot.sumatera-barat{top: 7%;left: 12%;}
-.map-dot.jambi{top: 10%;left: 17%;}
-.map-dot.kepulauan-riau{top: 3%;left: 15%;}
-.map-dot.bengkulu{top: 25%;left: 16%;}
-.map-dot.bangka-belitung{top: 21%;left: 24%;}
-.map-dot.sumatera-selatan{top: 21%;left: 20%;}
-.map-dot.lampung{top: 39%;left: 22%;}
-.map-dot.banten{top: 47%;left: 24%;}
-.map-dot.jakarta{top: 46%;left: 26%;}
-.map-dot.jawa-barat{top: 50%;left: 29%;}
-.map-dot.jawa-tengah{top: 49%;left: 35%;}
-.map-dot.yogyakarta{top: 55%;left: 36%;}
-.map-dot.jawa-timur{top: 52%;left: 39%;}
-.map-dot.kalimantan-barat{top: 10%;left: 35%;}
-.map-dot.kalimantan-tengah{top: 18%;left: 38%;}
-.map-dot.kalimantan-utara{top: -10%;left: 47%;}
-.map-dot.kalimantan-timur{top: 12%;left: 47%;}
-.map-dot.kalimantan-selatan{top: 26%;left: 44%;}
-.map-dot.bali{top: 57%;left: 43%;}
-.map-dot.nusa-tenggara-barat{top: 54%;left: 46%;}
-.map-dot.nusa-tenggara-timur{top: 54%;left: 50%;}
-.map-dot.sulawesi-utara{top: -9%;left: 66%;}
-.map-dot.gorontalo{top: 2%;left: 60%;}
-.map-dot.sulawesi-tengah{top: 13%;left: 58%;}
-.map-dot.sulawesi-barat{top: 16%;left: 54%;}
-.map-dot.sulawesi-selatan{top: 30%;left: 54%;}
-.map-dot.sulawesi-tenggara{top: 30%;left: 60%;}
-.map-dot.maluku-utara{top: -5%;left: 71%;}
-.map-dot.maluku{top: 25%;left: 74%;}
-.map-dot.papua-barat{top: 15%;left: 84%;}
-.map-dot.papua{top: 27%;left: 95%;}
+.map-dot.aceh{top: 5%;left: 3%;}
+.map-dot.sumatera-utara{top: 17%;left: 8%;}
+.map-dot.riau{top: 26%;left: 13%;}
+.map-dot.sumatera-barat{top: 34%;left: 12%;}
+.map-dot.jambi{top: 37%;left: 17%;}
+.map-dot.kepulauan-riau{top: 30%;left: 15%;}
+.map-dot.bengkulu{top: 52%;left: 16%;}
+.map-dot.bangka-belitung{top: 48%;left: 24%;}
+.map-dot.sumatera-selatan{top: 48%;left: 20%;}
+.map-dot.lampung{top: 68%;left: 22%;}
+.map-dot.banten{top: 74%;left: 24%;}
+.map-dot.jakarta{top: 73%;left: 26%;}
+.map-dot.jawa-barat{top: 77%;left: 29%;}
+.map-dot.jawa-tengah{top: 76%;left: 35%;}
+.map-dot.yogyakarta{top: 82%;left: 36%;}
+.map-dot.jawa-timur{top: 79%;left: 39%;}
+.map-dot.kalimantan-barat{top: 37%;left: 35%;}
+.map-dot.kalimantan-tengah{top: 45%;left: 38%;}
+.map-dot.kalimantan-utara{top: 17%;left: 47%;}
+.map-dot.kalimantan-timur{top: 39%;left: 47%;}
+.map-dot.kalimantan-selatan{top: 53%;left: 44%;}
+.map-dot.bali{top: 84%;left: 43%;}
+.map-dot.nusa-tenggara-barat{top: 85%;left: 48%;}
+.map-dot.nusa-tenggara-timur{top: 85%;left: 54%;}
+.map-dot.sulawesi-utara{top: 18%;left: 66%;}
+.map-dot.gorontalo{top: 29%;left: 60%;}
+.map-dot.sulawesi-tengah{top: 40%;left: 58%;}
+.map-dot.sulawesi-barat{top: 43%;left: 54%;}
+.map-dot.sulawesi-selatan{top: 57%;left: 54%;}
+.map-dot.sulawesi-tenggara{top: 57%;left: 60%;}
+.map-dot.maluku-utara{top: 22%;left: 71%;}
+.map-dot.maluku{top: 53%;left: 74%;}
+.map-dot.papua-barat{top: 42%;left: 84%;}
+.map-dot.papua{top: 54%;left: 95%;}
 
 @media only screen and (max-width: 480px){
     section{
