@@ -838,4 +838,12 @@
     $($(this).parent()).toggleClass("clicked");
   });
 
+  $(".tab-nav a").click(function(tn){
+    tn.preventDefault();
+    $(".tab-nav a").removeClass("active");
+    $(this).addClass("active");
+    $(".tab-ct").removeClass("show");
+    $($(this).attr("href")).addClass("show");
+  });
+
 })(jQuery);
