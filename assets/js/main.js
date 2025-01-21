@@ -180,10 +180,6 @@
       autoplay: true,
       dots: false,
       autoplayTimeout: 10000,
-      navText: [
-        '<span class="icon-right-arrow left"></span>',
-        '<span class="icon-right-arrow"></span>',
-      ],
       responsive: {
         0: {
           items: 1,
@@ -775,7 +771,24 @@
       $('.client-slider').owlCarousel({
         nav: true,
         dots: false,
-        items: 5
+        items: 5,
+        responsive: {
+          0: {
+            items: 3,
+          },
+          600: {
+            items: 3,
+          },
+          800: {
+            items: 4,
+          },
+          1024: {
+            items: 5,
+          },
+          1200: {
+            items: 5,
+          },
+        },
       });
     };
 
@@ -836,6 +849,27 @@
   $(".mega-menu a").click(function(mm){
     mm.preventDefault();
     $($(this).parent()).toggleClass("clicked");
+  });
+
+  $(".tab-nav a").click(function(tn){
+    tn.preventDefault();
+    $(".tab-nav a").removeClass("active");
+    $(this).addClass("active");
+    $(".tab-ct").removeClass("show");
+    $($(this).attr("href")).addClass("show");
+  });
+
+  $(".pop-link").click(function(rpl){
+    rpl.preventDefault();
+    $($(this).attr("href")).addClass("show");
+  });
+  $(".close-bt").click(function(){
+    $($(this).parent()).removeClass("show");
+  });
+
+  $(".map-bullet").click(function(){
+    $(".map-dot").removeClass("active");
+    $($(this).parent()).addClass("active");
   });
 
 })(jQuery);
