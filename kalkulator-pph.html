@@ -365,16 +365,17 @@
                                         <div class="inp-group">
                                             <label for="">Kode Objek Pajak</label>
                                             <select name="" id="kode-pajak">
-                                                <option value="15">24-103-01 -Royalti</option>
+                                                <option value="" disabled selected>Pilih Kode Pajak</option>
+                                                <option value="10">24-103-01 -Royalti</option>
                                                 <option value="2">24-104-01 -Jasa Teknik</option>
-                                                <option value="2">24-104-01 -Jasa Manajement</option>
+                                                <option value="5">24-104-01 -Jasa Manajement</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-md-8 mb-2">
                                         <div class="inp-group">
                                             <label for="">Penghasilan Bruto</label>
-                                            <input type="text">
+                                            <input type="text" id="brutoPPH23">
                                         </div>
                                     </div>
                                     <div class="col-md-8 mb-2">
@@ -386,7 +387,7 @@
                                     <div class="col-md-8 mb-2">
                                         <div class="inp-group">
                                             <label for="pph23">PPh 23</label>
-                                            <input type="text" id="pph23" class="no-edit" readonly>
+                                            <input type="text" id="resultPPH23" class="no-edit" value="">
                                         </div>
                                     </div>
                                 </div>
@@ -673,7 +674,7 @@
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
-    <script>
+    <!-- <script>
         const inputs = document.querySelectorAll('.inp-group input[type="text"]:not(.no-edit)');
         const brutoField = document.querySelector('.no-edit'); // Penghasilan Bruto
         const terField = document.querySelectorAll('.no-edit')[1]; // TER Bulanan
@@ -795,29 +796,29 @@
 
             return pph21;
         }
-    </script>
+    </script> -->
 
     <!-- PPH23 -->
     <script>
     document.addEventListener('DOMContentLoaded', () => {
             const kodePajak = document.getElementById('kode-pajak');
             const tarifInput = document.getElementById('tarif');
-            const brutoInput = document.getElementById('penghasilan-bruto');
-            const pph23Input = document.getElementById('pph23');
+            const brutoInput = document.getElementById('brutoPPH23');
+            const pph23Result = document.getElementById('resultPPH23');
 
             kodePajak.addEventListener('change', () => {
                 tarifInput.value = kodePajak.value ? `${kodePajak.value}%` : '';
             });
-
-            brutoInput.addEventListener('input', hitungPPH23);
 
             function hitungPPH23() {
                 const bruto = parseFloat(brutoInput.value) || 0;
                 const tarif = parseFloat(kodePajak.value) / 100 || 0;
                 const pph23 = bruto * tarif;
 
-                pph23Input.value = pph23 ? pph23.toFixed(2) : '';
+                pph23Result.value = pph23 ? pph23.toFixed(2) : '';
             }
+            brutoInput.addEventListener('input', hitungPPH23);
+
         });
 
     </script>
