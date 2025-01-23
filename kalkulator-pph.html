@@ -240,7 +240,7 @@
         </header>
 
         <div class="stricky-header stricked-menu main-menu">
-            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+            <div class="sticky-header_content"></div><!-- /.sticky-header_content -->
         </div><!-- /.stricky-header -->
 
         <section class="mt-120">
@@ -267,7 +267,7 @@
                                     <div class="col-md-4">
                                         <div class="inp-group">
                                             <label for="">Status Pegawai</label>
-                                            <select name="" id="">
+                                            <select name="" id="status-pegawai">
                                                 <option value="">Tidak Kawin</option>
                                                 <option value="">Kawin</option>
                                                 <option value="">Hidup Terpisah</option>
@@ -277,7 +277,7 @@
                                     <div class="col-md-4">
                                         <div class="inp-group">
                                             <label for="">Tanggungan</label>
-                                            <select name="" id="">
+                                            <select name="" id="tanggungan">
                                                 <option value="">0</option>
                                                 <option value="">1</option>
                                                 <option value="">2</option>
@@ -340,7 +340,7 @@
                                 <div class="inp-group row mx-auto justify-content-center">
                                     <div class="col-md-8 mb-2">
                                         <label for="bruto">Tarif Efektif Rata-rata (TER) Bulanan</label>
-                                        <input id="bruto" type="text" class="text-right no-edit">
+                                        <input id="ter-field" type="text" class="text-right no-edit">
                                     </div>
                                     <div class="col-md-8 mb-2">
                                         <label for="kategori-ter">Kategori TER</label>
@@ -348,7 +348,7 @@
                                     </div>
                                     <div class="col-md-8 mb-2">
                                         <label for="pph21">PPh Pasal 21 Terutang bulan ini</label>
-                                        <input id="pph21" type="text" class="text-right no-edit">
+                                        <input id="pph21-result" type="text" class="text-right no-edit">
                                     </div>
                                 </div>
                                 <div class="inp-group">
@@ -395,34 +395,37 @@
                         </div>
                         <div id="pph4" class="tab-ct bg-greenlight">
                             <form action="" class="simple-form">
-                                <h4 class="mb-3 text-center">PPh 4(2)</h4>
+                                <h4 class="mb-3 text-center">PPh23</h4>
                                 <div class="inp-group row mb-5 mx-auto justify-content-center">
                                     <div class="col-md-8 mb-2">
                                         <div class="inp-group">
                                             <label for="">Kode Objek Pajak</label>
-                                            <select name="" id="">
-                                                <option value="">Opsi 1</option>
-                                                <option value="">Opsi 2</option>
-                                                <option value="">Opsi 3</option>
+                                            <select name="" id="kode-pajak-pph42">
+                                                <option value="" disabled selected>Pilih Kode Pajak</option>
+                                                <option value="10">28-419-01 -Dividen yang Diterima/Diperoleh Wajib
+                                                    Pajak Orang Pribadi Dalam Negeri </option>
+                                                <option value="20">24-421-01 -Uplift Hulu Migas</option>
+                                                <option value="5">24-421-02 -Participating Interest Explorasi Hulu Migas
+                                                </option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-md-8 mb-2">
                                         <div class="inp-group">
                                             <label for="">Penghasilan Bruto</label>
-                                            <input type="text">
+                                            <input type="text" id="bruto-pph42">
                                         </div>
                                     </div>
                                     <div class="col-md-8 mb-2">
                                         <div class="inp-group">
-                                            <label for="">Tarif</label>
-                                            <input type="text" class="no-edit">
+                                            <label for="tarif">Tarif</label>
+                                            <input type="text" id="tarif-pph42" class="no-edit" readonly>
                                         </div>
                                     </div>
                                     <div class="col-md-8 mb-2">
                                         <div class="inp-group">
-                                            <label for="">PPh 4(2)</label>
-                                            <input type="text" class="no-edit">
+                                            <label for="pph23">PPh 4 Ayat 2</label>
+                                            <input type="text" id="result-pph42" class="no-edit" value="">
                                         </div>
                                     </div>
                                 </div>
@@ -435,25 +438,25 @@
                                     <div class="col-md-8 mb-2">
                                         <div class="inp-group">
                                             <label for="">DPP</label>
-                                            <input type="text">
+                                            <input type="text" id="dpp-ppn">
                                         </div>
                                     </div>
                                     <div class="col-md-8 mb-2">
                                         <div class="inp-group">
                                             <label for="">Tarif</label>
-                                            <input type="text" class="no-edit">
+                                            <input type="text" value="11%" class="no-edit disabled">
                                         </div>
                                     </div>
                                     <div class="col-md-8 mb-2">
                                         <div class="inp-group">
                                             <label for="">PPN</label>
-                                            <input type="text" class="no-edit">
+                                            <input type="text" id="result-ppn" class="no-edit">
                                         </div>
                                     </div>
                                     <div class="col-md-8 mb-2">
                                         <div class="inp-group">
                                             <label for="">Harga setelah PPN</label>
-                                            <input type="text" class="no-edit">
+                                            <input type="text" id="total-ppn" class="no-edit">
                                         </div>
                                     </div>
                                 </div>
@@ -524,7 +527,7 @@
                 <div class="site-footer__top">
                     <div class="row">
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                            <div class="footer-widget__column footer-widget__about">
+                            <div class="footer-widget_column footer-widget_about">
                                 <div class="footer-widget__about-logo">
                                     <a href="index.html"><img src="assets/images/legalize/logo3.png" alt=""
                                             width="180"></a>
@@ -563,7 +566,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                            <div class="footer-widget__column footer-widget__explore clearfix">
+                            <div class="footer-widget_column footer-widget_explore clearfix">
                                 <h3 class="footer-widget__title">Navigation</h3>
                                 <ul class="footer-widget__explore-list list-unstyled">
                                     <li><a href="about.html" class="text-white">Layanan</a></li>
@@ -574,8 +577,8 @@
                             </div>
                         </div>
                         <div class="col-xl-5 col-lg-6 col-md-8 wow fadeInUp" data-wow-delay="400ms">
-                            <div class="footer-widget__column footer-widget__newsletter">
-                                <h3 class="footer-widget__title footer-widget__title-news">Newsletter</h3>
+                            <div class="footer-widget_column footer-widget_newsletter">
+                                <h3 class="footer-widget_title footer-widget_title-news">Newsletter</h3>
                                 <form class="footer-widget__newsletter-form">
                                     <p class="footer-widget__newsletter-text text-white">Subscribe for latest
                                         information</p>
@@ -617,10 +620,10 @@
 
 
     <div class="mobile-nav__wrapper">
-        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <div class="mobile-nav_overlay mobile-nav_toggler"></div>
         <!-- /.mobile-nav__overlay -->
         <div class="mobile-nav__content">
-            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+            <span class="mobile-nav_close mobile-nav_toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
                 <a href="index.html" aria-label="logo image"><img src="assets/images/legalize/logo3.png" width="155"
@@ -674,12 +677,12 @@
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
-    <!-- <script>
+    <script>
         const inputs = document.querySelectorAll('.inp-group input[type="text"]:not(.no-edit)');
         const brutoField = document.querySelector('.no-edit'); // Penghasilan Bruto
-        const terField = document.querySelectorAll('.no-edit')[1]; // TER Bulanan
-        const kategoriTERField = document.querySelectorAll('.no-edit')[2]; // Kategori TER
-        const pph21Field = document.querySelectorAll('.no-edit')[3]; // PPh Pasal 21
+        const terField = document.querySelectorAll('.ter-field')[1]; // TER Bulanan
+        const kategoriTERField = document.querySelectorAll('.kategori-ter')[2]; // Kategori TER
+        const pph21Field = document.querySelectorAll('.pph21-result')[3]; // PPh Pasal 21
 
         const statusField = document.querySelector('select[name="status-pegawai"]'); // Status Pegawai
         const tanggunganField = document.querySelector('select[name="tanggungan"]'); // Tanggungan
@@ -752,7 +755,7 @@
             }
 
             const TER = (pph21 / bruto) * 100; // Tarif Efektif Rata-rata (%)
-            terField.value = `${TER.toFixed(2)}%`; // Format to 2 decimal places
+            terField.value = ${ TER.toFixed(2) }%; // Format to 2 decimal places
 
             // Tentukan Kategori TER
             let kategori = "Rendah";
@@ -796,18 +799,18 @@
 
             return pph21;
         }
-    </script> -->
+    </script>
 
     <!-- PPH23 -->
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', () => {
             const kodePajak = document.getElementById('kode-pajak');
             const tarifInput = document.getElementById('tarif');
             const brutoInput = document.getElementById('brutoPPH23');
             const pph23Result = document.getElementById('resultPPH23');
 
             kodePajak.addEventListener('change', () => {
-                tarifInput.value = kodePajak.value ? `${kodePajak.value}%` : '';
+                tarifInput.value = kodePajak.value ? ${ kodePajak.value }% : '';
             });
 
             function hitungPPH23() {
@@ -821,6 +824,54 @@
 
         });
 
+    </script>
+
+    <!-- PPH 4 ayat 2 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const kodePajak = document.getElementById('kode-pajak-pph42');
+            const tarifInput = document.getElementById('tarif-pph42');
+            const brutoInput = document.getElementById('bruto-pph42');
+            const pph42Result = document.getElementById('result-pph42');
+
+            kodePajak.addEventListener('change', () => {
+                tarifInput.value = kodePajak.value ? ${ kodePajak.value }% : '';
+            });
+
+            function hitungPPH42() {
+                const bruto = parseFloat(brutoInput.value) || 0;
+                const tarif = parseFloat(kodePajak.value) / 100 || 0;
+                const pph42 = bruto * tarif;
+
+                pph42Result.value = pph42 ? pph42.toFixed(2) : '';
+            }
+            brutoInput.addEventListener('input', hitungPPH42);
+
+        });
+    </script>
+
+    <!-- PPN -->
+    <script>
+        const dppInput = document.getElementById("dpp-ppn");
+        const ppnResult = document.getElementById("result-ppn");
+        const totalResult = document.getElementById("total-ppn");
+        const ppnRate = 0.11;
+
+        function calculatePPN() {
+            const dppValue = parseFloat(dppInput.value);
+
+            if (!isNaN(dppValue)) {
+                const ppnValue = dppValue * ppnRate;
+                const totalValue = dppValue + ppnValue;
+                ppnResult.value = ppnValue.toFixed(2);
+                totalResult.value = totalValue.toFixed(2);
+            } else {
+                ppnResult.value = "";
+                totalResult.value = "";
+            }
+        }
+
+        dppInput.addEventListener("input", calculatePPN);
     </script>
 
 
