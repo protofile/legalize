@@ -260,101 +260,104 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div id="pph21" class="tab-ct show bg-greenlight">
-                            <form action="" class="simple-form">
+                        <div class="tab-ct show bg-greenlight">
+                            <form class="simple-form" id="pphForm">
                                 <h4 class="mb-3 text-center">Data Personal</h4>
                                 <div class="inp-group row mb-5 mx-auto justify-content-center">
                                     <div class="col-md-4">
                                         <div class="inp-group">
-                                            <label for="">Status Pegawai</label>
-                                            <select name="" id="status-pegawai">
-                                                <option value="">Tidak Kawin</option>
-                                                <option value="">Kawin</option>
-                                                <option value="">Hidup Terpisah</option>
+                                            <label for="statusKawin">Status Kawin</label>
+                                            <select id="statusKawin" required>
+                                                <option value="tidakKawin">Tidak Kawin</option>
+                                                <option value="kawin">Kawin</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="inp-group">
-                                            <label for="">Tanggungan</label>
-                                            <select name="" id="tanggungan">
-                                                <option value="">0</option>
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                                <option value="">3</option>
-                                                <option value="">4</option>
+                                            <label for="tanggungan">Jumlah Tanggungan</label>
+                                            <select id="tanggungan" required>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="divider"></div>
-                                <h4 class="mb-3 text-center">Tunjangan Pajak</h4>
+                                <h4 class="mb-3 text-center" for="tunjanganPajak">Tunjangan Pajak</h4>
                                 <div class="inp-group row mx-auto justify-content-center">
                                     <div class="col-md-8">
-                                        <div class="checkbox-group">
+                                        <!-- <div class="checkbox-group">
                                             <label for="type-1"><input type="radio" name="type" id="type-1"> Gross (PPh
                                                 21 ditanggung karyawan)</label>
                                             <label for="type-2"><input type="radio" name="type" id="type-2"> Gross Up
                                                 (PPh 21 ditanggung perusahaan)</label>
-                                        </div>
+                                        </div> -->
+                                        <select id="tunjanganPajak" required>
+                                            <option value="gross">Gross (PPh 21 ditanggung karyawan)</option>
+                                            <option value="grossUp">Gross Up (PPh 21 ditanggung perusahaan)</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="divider"></div>
                                 <h4 class="mb-3 text-center">Penghasilan</h4>
                                 <div class="inp-group row mx-auto justify-content-center">
                                     <div class="col-md-8 mb-2">
-                                        <label for="">Gaji/Pensiunan atau THT/JHT</label>
-                                        <input type="text" class="text-right">
+                                        <label for="gaji">Gaji/Pensiunan atau THT/JHT</label>
+                                        <input type="text" class="text-right" id="gaji" required>
                                     </div>
                                     <div class="col-md-8 mb-2">
-                                        <label for="">Tunjangan PPh</label>
-                                        <input type="text" class="text-right">
+                                        <label for="tunjanganPph">Tunjangan PPh</label>
+                                        <input type="text" class="text-right" id="tunjanganPph" required>
                                     </div>
                                     <div class="col-md-8 mb-2">
-                                        <label for="">Tunjangan Lainnya, Uang Lembur, dan sebagainya</label>
-                                        <input type="text" class="text-right">
+                                        <label for="tunjanganLainnya">Tunjangan Lainnya, Uang Lembur, dan
+                                            sebagainya</label>
+                                        <input type="text" class="text-right" id="tunjanganLainnya" required>
                                     </div>
                                     <div class="col-md-8 mb-2">
-                                        <label for="">Honorarium dan Imbalan Lain Sejenisnya</label>
-                                        <input type="text" class="text-right">
+                                        <label for="honorarium">Honorarium dan Imbalan Lain Sejenisnya</label>
+                                        <input type="text" class="text-right" id="honorarium" required>
                                     </div>
                                     <div class="col-md-8 mb-2">
-                                        <label for="">Premi Asuransi yang dibayar Pemberi Kerja</label>
-                                        <input type="text" class="text-right">
+                                        <label for="premiAsuransi">Premi Asuransi yang dibayar Pemberi Kerja</label>
+                                        <input type="text" class="text-right" id="premiAsuransi" required>
                                     </div>
                                     <div class="col-md-8 mb-2">
-                                        <label for="">Natura dan Kenikmatan Lainnya</label>
-                                        <input type="text" class="text-right">
+                                        <label for="natura">Natura dan Kenikmatan Lainnya</label>
+                                        <input type="text" class="text-right" id="natura" required>
                                     </div>
                                     <div class="col-md-8 mb-2">
-                                        <label for="">Tantiem, Bonus, Gratifikasi, Jasa Produksi dan THR</label>
-                                        <input type="text" class="text-right">
-                                    </div>
-                                    <div class="col-md-8 mb-2">
-                                        <label for="">Penghasilan Bruto</label>
-                                        <input type="text" class="text-right no-edit">
-                                    </div>
-                                </div>
-                                <div class="divider"></div>
-                                <h4 class="mb-3 text-center">Hasil Penghitungan PPh Pasal 21</h4>
-                                <div class="inp-group row mx-auto justify-content-center">
-                                    <div class="col-md-8 mb-2">
-                                        <label for="bruto">Tarif Efektif Rata-rata (TER) Bulanan</label>
-                                        <input id="ter-field" type="text" class="text-right no-edit">
-                                    </div>
-                                    <div class="col-md-8 mb-2">
-                                        <label for="kategori-ter">Kategori TER</label>
-                                        <input id="kategori-ter" type="text" class="text-right no-edit">
-                                    </div>
-                                    <div class="col-md-8 mb-2">
-                                        <label for="pph21">PPh Pasal 21 Terutang bulan ini</label>
-                                        <input id="pph21-result" type="text" class="text-right no-edit">
+                                        <label for="bonus">Tantiem, Bonus, Gratifikasi, Jasa Produksi dan THR</label>
+                                        <input type="text" class="text-right" id="bonus" required>
                                     </div>
                                 </div>
                                 <div class="inp-group">
-                                    <button class="thm-btn">HITUNG</button>
+                                    <button class="thm-btn" onclick="calculatePph()">HITUNG</button>
                                 </div>
                             </form>
+                            <div class="divider"></div>
+                            <h4 class="mb-3 text-center">Hasil Penghitungan PPh Pasal 21</h4>
+                            <div id="results" class="inp-group row mx-auto justify-content-center">
+                                <div class="col-md-8 mb-2">
+                                    <label for="penghasilanBruto">Penghasilan Bruto</label>
+                                    <input type="text" class="text-right no-edit" id="penghasilanBruto">
+                                </div>
+                                <div class="col-md-8 mb-2">
+                                    <label for="ter">Tarif Efektif Rata-rata (TER) Bulanan</label>
+                                    <input id="ter" type="text" class="text-right no-edit">
+                                </div>
+                                <div class="col-md-8 mb-2">
+                                    <label for="kategoriTer">Kategori TER</label>
+                                    <input id="kategoriTer" type="text" class="text-right no-edit">
+                                </div>
+                                <div class="col-md-8 mb-2">
+                                    <label for="pphTerutang">PPh Pasal 21 Terutang bulan ini</label>
+                                    <input id="pphTerutang" type="text" class="text-right no-edit">
+                                </div>
+                            </div>
                         </div>
 
                         <div id="pph23" class="tab-ct bg-greenlight">
@@ -677,7 +680,9 @@
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
-    <script>
+
+
+    <!-- <script>
         const inputs = document.querySelectorAll('.inp-group input[type="text"]:not(.no-edit)');
         const brutoField = document.querySelector('.no-edit'); // Penghasilan Bruto
         const terField = document.querySelectorAll('.ter-field')[1]; // TER Bulanan
@@ -799,6 +804,68 @@
 
             return pph21;
         }
+    </script> -->
+
+    <script>
+        function formatCurrencyInput(input) {
+            input.addEventListener('input', (event) => {
+                let value = input.value.replace(/[^\d]/g, '');
+                input.value = new Intl.NumberFormat('id-ID').format(value);
+            });
+        }
+
+        document.querySelectorAll('input[type="text"]').forEach(input => {
+            formatCurrencyInput(input);
+        });
+
+        function calculatePph() {
+            const parseCurrency = (value) => parseFloat(value.replace(/[^\d]/g, '')) || 0;
+
+            // Ambil nilai dari form
+            const tunjanganPajak = document.getElementById('tunjanganPajak').value;
+            const statusKawin = document.getElementById('statusKawin').value;
+            const tanggungan = parseInt(document.getElementById('tanggungan').value) || 0;
+            const gaji = parseCurrency(document.getElementById('gaji').value);
+            const tunjanganPph = parseCurrency(document.getElementById('tunjanganPph').value);
+            const tunjanganLainnya = parseCurrency(document.getElementById('tunjanganLainnya').value);
+            const honorarium = parseCurrency(document.getElementById('honorarium').value);
+            const premiAsuransi = parseCurrency(document.getElementById('premiAsuransi').value);
+            const natura = parseCurrency(document.getElementById('natura').value);
+            const bonus = parseCurrency(document.getElementById('bonus').value);
+
+            // console.log(tunjanganPajak)
+
+            // Hitung Penghasilan Bruto
+            const penghasilanBruto = gaji + tunjanganPph + tunjanganLainnya + honorarium + premiAsuransi + natura + bonus;
+
+            // Hitung PTKP (Penghasilan Tidak Kena Pajak)
+            let ptkp = 54000000; // PTKP untuk tidak kawin tanpa tanggungan
+            if (statusKawin === 'kawin') {
+                ptkp += 4500000; // Tambahan untuk kawin
+            }
+            ptkp += Math.min(tanggungan, 3) * 4500000; // Tambahan untuk tanggungan (maksimal 3)
+
+            // Hitung Penghasilan Kena Pajak (PKP)
+            const pkp = Math.max(penghasilanBruto - ptkp, 0);
+
+            // Hitung Tarif Efektif Rata-rata (TER) (contoh sederhana)
+            let ter = 0.05; // 5% sebagai contoh tarif
+            if (pkp > 50000000) {
+                ter = 0.15; // 15% untuk penghasilan lebih tinggi
+            }
+
+            // Kategori TER
+            const kategoriTer = ter === 0.05 ? 'Rendah' : 'Tinggi';
+
+            // Hitung PPh Terutang
+            const pphTerutang = pkp * ter;
+
+            // Tampilkan hasil
+            document.getElementById('penghasilanBruto').textContent = penghasilanBruto.toLocaleString();
+            document.getElementById('ter').textContent = (ter * 100).toFixed(2);
+            document.getElementById('kategoriTer').textContent = kategoriTer;
+            document.getElementById('pphTerutang').textContent = pphTerutang.toLocaleString();
+        }
     </script>
 
     <!-- PPH23 -->
@@ -810,7 +877,7 @@
             const pph23Result = document.getElementById('resultPPH23');
 
             kodePajak.addEventListener('change', () => {
-                tarifInput.value = kodePajak.value ? `${ kodePajak.value }%` : '';
+                tarifInput.value = kodePajak.value ? `${kodePajak.value}%` : '';
             });
 
             function hitungPPH23() {
@@ -835,7 +902,7 @@
             const pph42Result = document.getElementById('result-pph42');
 
             kodePajak.addEventListener('change', () => {
-                tarifInput.value = kodePajak.value ? `${ kodePajak.value }%` : '';
+                tarifInput.value = kodePajak.value ? `${kodePajak.value}%` : '';
             });
 
             function hitungPPH42() {
