@@ -755,7 +755,7 @@
             }
 
             const TER = (pph21 / bruto) * 100; // Tarif Efektif Rata-rata (%)
-            terField.value = ${ TER.toFixed(2) }%; // Format to 2 decimal places
+            terField.value = `${ TER.toFixed(2) }%`; // Format to 2 decimal places
 
             // Tentukan Kategori TER
             let kategori = "Rendah";
@@ -810,7 +810,7 @@
             const pph23Result = document.getElementById('resultPPH23');
 
             kodePajak.addEventListener('change', () => {
-                tarifInput.value = kodePajak.value ? ${ kodePajak.value }% : '';
+                tarifInput.value = kodePajak.value ? `${ kodePajak.value }%` : '';
             });
 
             function hitungPPH23() {
@@ -835,7 +835,7 @@
             const pph42Result = document.getElementById('result-pph42');
 
             kodePajak.addEventListener('change', () => {
-                tarifInput.value = kodePajak.value ? ${ kodePajak.value }% : '';
+                tarifInput.value = kodePajak.value ? `${ kodePajak.value }%` : '';
             });
 
             function hitungPPH42() {
