@@ -10157,6 +10157,7 @@ table.checkout__table tr td{
 }
 .inp-group button{
     width: 100%;
+    max-width: 180px;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
