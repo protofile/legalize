@@ -335,7 +335,7 @@
                                     </div>
                                 </div>
                                 <div class="inp-group">
-                                    <button class="thm-btn" onclick="calculatePph()">HITUNG</button>
+                                    <button class="thm-btn" onclick="calculatePph(event)">HITUNG</button>
                                 </div>
                             </form>
                             <div class="divider"></div>
@@ -680,132 +680,6 @@
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
-
-
-    <!-- <script>
-        const inputs = document.querySelectorAll('.inp-group input[type="text"]:not(.no-edit)');
-        const brutoField = document.querySelector('.no-edit'); // Penghasilan Bruto
-        const terField = document.querySelectorAll('.ter-field')[1]; // TER Bulanan
-        const kategoriTERField = document.querySelectorAll('.kategori-ter')[2]; // Kategori TER
-        const pph21Field = document.querySelectorAll('.pph21-result')[3]; // PPh Pasal 21
-
-        const statusField = document.querySelector('select[name="status-pegawai"]'); // Status Pegawai
-        const tanggunganField = document.querySelector('select[name="tanggungan"]'); // Tanggungan
-        const tunjanganPajakField = document.querySelectorAll('input[name="type"]'); // Tunjangan Pajak
-
-        // Event listeners
-        inputs.forEach(input => {
-            input.addEventListener('input', () => {
-                updateCalculations();
-            });
-        });
-
-        [statusField, tanggunganField, ...tunjanganPajakField].forEach(element => {
-            element.addEventListener('change', () => {
-                updateCalculations();
-            });
-        });
-
-        function updateCalculations() {
-            const bruto = calculateBruto();
-            const pph21 = calculatePPh21(bruto);
-            calculateTERAndCategory(pph21, bruto);
-        }
-
-        function calculateBruto() {
-            let totalBruto = 0;
-
-            inputs.forEach(input => {
-                const value = parseFloat(input.value.replace(/,/g, '')); // Remove commas for parsing
-                if (!isNaN(value)) {
-                    totalBruto += value;
-                }
-            });
-
-            brutoField.value = totalBruto.toLocaleString('en-US'); // Format as string with commas
-            return totalBruto; // Return bruto for chaining calculations
-        }
-
-        function calculatePPh21(bruto) {
-            // Get selected tunjangan pajak
-            const tunjanganPajak = [...tunjanganPajakField].find(input => input.checked)?.id || "type-1";
-
-            // Get PTKP (Penghasilan Tidak Kena Pajak)
-            const status = statusField.value || "TK"; // Default Tidak Kawin
-            const tanggungan = parseInt(tanggunganField.value) || 0;
-            const PTKP = getPTKP(status, tanggungan);
-
-            // Hitung PKP (Penghasilan Kena Pajak)
-            const biayaJabatan = Math.min(bruto * 0.05, 500000); // Maksimum Rp 6 juta setahun
-            const neto = bruto - biayaJabatan;
-            const PKP = Math.max(neto - PTKP, 0);
-
-            // Hitung PPh Pasal 21
-            let pph21 = calculateTarifPajak(PKP);
-
-            // Adjust for Gross Up
-            if (tunjanganPajak === "type-2") {
-                pph21 = pph21 / (1 - 0.05); // Example adjustment for gross-up logic
-            }
-
-            pph21Field.value = pph21.toLocaleString('en-US'); // Format as string
-            return pph21; // Return for TER calculation
-        }
-
-        function calculateTERAndCategory(pph21, bruto) {
-            if (bruto === 0) {
-                terField.value = "0.00%";
-                kategoriTERField.value = "Tidak Ada";
-                return;
-            }
-
-            const TER = (pph21 / bruto) * 100; // Tarif Efektif Rata-rata (%)
-            terField.value = `${ TER.toFixed(2) }%`; // Format to 2 decimal places
-
-            // Tentukan Kategori TER
-            let kategori = "Rendah";
-            if (TER >= 5 && TER <= 15) {
-                kategori = "Sedang";
-            } else if (TER > 15) {
-                kategori = "Tinggi";
-            }
-
-            kategoriTERField.value = kategori;
-        }
-
-        function getPTKP(status, tanggungan) {
-            const basePTKP = {
-                TK: 54000000, // Tidak Kawin
-                K: 58500000,  // Kawin
-                HT: 54000000  // Hidup Terpisah
-            };
-
-            return basePTKP[status] + (4500000 * tanggungan); // Rp 4.500.000 per tanggungan
-        }
-
-        function calculateTarifPajak(PKP) {
-            let pph21 = 0;
-
-            if (PKP > 500000000) {
-                pph21 += (PKP - 500000000) * 0.30;
-                PKP = 500000000;
-            }
-            if (PKP > 250000000) {
-                pph21 += (PKP - 250000000) * 0.25;
-                PKP = 250000000;
-            }
-            if (PKP > 50000000) {
-                pph21 += (PKP - 50000000) * 0.15;
-                PKP = 50000000;
-            }
-            if (PKP > 0) {
-                pph21 += PKP * 0.05;
-            }
-
-            return pph21;
-        }
-    </script> -->
-
     <script>
         function formatCurrencyInput(input) {
             input.addEventListener('input', (event) => {
@@ -818,7 +692,8 @@
             formatCurrencyInput(input);
         });
 
-        function calculatePph() {
+        function calculatePph(event) {
+            event.preventDefault();
             const parseCurrency = (value) => parseFloat(value.replace(/[^\d]/g, '')) || 0;
 
             // Ambil nilai dari form
@@ -837,6 +712,7 @@
 
             // Hitung Penghasilan Bruto
             const penghasilanBruto = gaji + tunjanganPph + tunjanganLainnya + honorarium + premiAsuransi + natura + bonus;
+            console.log(penghasilanBruto)
 
             // Hitung PTKP (Penghasilan Tidak Kena Pajak)
             let ptkp = 54000000; // PTKP untuk tidak kawin tanpa tanggungan
@@ -861,10 +737,10 @@
             const pphTerutang = pkp * ter;
 
             // Tampilkan hasil
-            document.getElementById('penghasilanBruto').textContent = penghasilanBruto.toLocaleString();
-            document.getElementById('ter').textContent = (ter * 100).toFixed(2);
-            document.getElementById('kategoriTer').textContent = kategoriTer;
-            document.getElementById('pphTerutang').textContent = pphTerutang.toLocaleString();
+            document.getElementById('penghasilanBruto').value = penghasilanBruto.toLocaleString();
+            document.getElementById('ter').value = (ter * 100).toFixed(2);
+            document.getElementById('kategoriTer').value = kategoriTer;
+            document.getElementById('pphTerutang').value = pphTerutang.toLocaleString();
         }
     </script>
 
