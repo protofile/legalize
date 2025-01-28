@@ -10369,6 +10369,12 @@ input#njop{
 input#njop:focus{
     outline: none;
 }
+.stricky-header.stricky-fixed .main-menu__list .dropdown a{
+    color: #333;
+}
+.stricky-header.stricky-fixed .main-menu__list .dropdown a:hover{
+    color: #fff;
+}
 
 @media only screen and (max-width: 480px){
     html, body{
