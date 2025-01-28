@@ -10361,6 +10361,14 @@ table.checkout__table tr td{
     background: #fff;
     color: var(--thm-primary);
 }
+input#njop{
+    border: none;
+    text-align: right;
+    width: 100%;
+}
+input#njop:focus{
+    outline: none;
+}
 
 @media only screen and (max-width: 480px){
     html, body{
