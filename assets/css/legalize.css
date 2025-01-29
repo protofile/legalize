@@ -10376,7 +10376,7 @@ input#njop:focus{
     color: #fff;
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 768px){
     html, body{
         overflow-x: hidden;
     }
