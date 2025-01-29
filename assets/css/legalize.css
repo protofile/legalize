@@ -221,7 +221,7 @@ body.boxed-wrapper {
 
 .section-title__title {
     margin: 0;
-    font-weight: 900;
+    font-weight: 700;
     color: var(--thm-black);
     font-size: 50px;
     line-height: 60px;
@@ -236,6 +236,7 @@ body.boxed-wrapper {
     font-size: 18px;
     align-items: center;
     line-height: 30px;
+    font-weight: 600;
 }
 
 .bootstrap-select .dropdown-menu {
@@ -7024,6 +7025,7 @@ body.boxed-wrapper {
     margin: 0;
     line-height: 32px;
     padding-bottom: 15px;
+    font-weight: 600;
 }
 
 .blog-single__btn {
