@@ -10376,7 +10376,7 @@ input#njop:focus{
     color: #fff;
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 768px){
     html, body{
         overflow-x: hidden;
     }
@@ -10581,5 +10581,63 @@ input#njop:focus{
     .news-details__content h5,
     .about-detail-service p{
         font-size: 14px;
+    }
+
+    .map-dot.aceh .map-info,
+    .map-dot.sumatera-utara .map-info,
+    .map-dot.riau .map-info,
+    .map-dot.kepulauan-riau .map-info,
+    .map-dot.sumatera-barat .map-info,
+    .map-dot.bengkulu .map-info,
+    .map-dot.jambi .map-info,
+    .map-dot.kalimantan-utara .map-info,
+    .map-dot.kalimantan-barat .map-info,
+    .map-dot.kalimantan-timur .map-info,
+    .map-dot.kalimantan-tengah .map-info,
+    .map-dot.kalimantan-selatan .map-info,
+    .map-dot.sulawesi-utara .map-info,
+    .map-dot.gorontalo .map-info,
+    .map-dot.sulawesi-tengah .map-info,
+    .map-dot.sulawesi-selatan .map-info,
+    .map-dot.maluku-utara .map-info{
+        bottom: auto;
+        top: 220%;
+    }
+    .map-dot.aceh .map-info,
+    .map-dot.sumatera-utara .map-info,
+    .map-dot.riau .map-info,
+    .map-dot.kepulauan-riau .map-info,
+    .map-dot.sumatera-barat .map-info,
+    .map-dot.bengkulu .map-info,
+    .map-dot.jambi .map-info{
+        left: 500%;
+    }
+    .map-dot.aceh .map-info::before,
+    .map-dot.sumatera-utara .map-info::before,
+    .map-dot.riau .map-info::before,
+    .map-dot.kepulauan-riau .map-info::before,
+    .map-dot.sumatera-barat .map-info::before,
+    .map-dot.bengkulu .map-info::before,
+    .map-dot.jambi .map-info::before,
+    .map-dot.kalimantan-utara .map-info::before,
+    .map-dot.kalimantan-barat .map-info::before,
+    .map-dot.kalimantan-timur .map-info::before,
+    .map-dot.kalimantan-tengah .map-info::before,
+    .map-dot.kalimantan-selatan .map-info::before,
+    .map-dot.sulawesi-utara .map-info::before,
+    .map-dot.gorontalo .map-info::before,
+    .map-dot.sulawesi-tengah .map-info::before,
+    .map-dot.sulawesi-selatan .map-info::before,
+    .map-dot.maluku-utara .map-info::before{
+        top: 0;
+    }
+    .map-dot.aceh .map-info::before,
+    .map-dot.sumatera-utara .map-info::before,
+    .map-dot.riau .map-info::before,
+    .map-dot.kepulauan-riau .map-info::before,
+    .map-dot.sumatera-barat .map-info::before,
+    .map-dot.bengkulu .map-info::before,
+    .map-dot.jambi .map-info::before{
+        left: 10%;
     }
 }
